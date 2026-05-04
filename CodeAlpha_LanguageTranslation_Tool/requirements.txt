@@ -1,2 +1,0 @@
-Flask==3.0.3
-deep-translator==1.11.4
