@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translation Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">T</div>
+        <div>
+          <h1>Language Translation Tool</h1>
+          <p>Translate text between multiple languages</p>
+        </div>
+      </div>
+      <button class="icon-btn" id="themeToggle">☾</button>
+    </header>
+
+    <main class="workspace">
+      <section class="panel">
+        <h3>Source text</h3>
+
+        <div class="select-row">
+          <select id="sourceLang"></select>
+          <button class="icon-btn" id="swapBtn">⇄</button>
+          <select id="targetLang"></select>
+        </div>
+
+        <textarea id="sourceText" placeholder="Enter text to translate..."></textarea>
+
+        <div class="meta-row">
+          <span><span id="charCount">0</span> characters • <span id="wordCount">0</span> words</span>
+          <button class="action-btn primary" id="translateBtn">Translate now</button>
+        </div>
+
+        <div class="status" id="statusBox">Ready.</div>
+      </section>
+
+      <section class="panel">
+        <h3>Translated output</h3>
+        <textarea id="translatedText" readonly placeholder="Translation appears here..."></textarea>
+
+        <div class="meta-row">
+          <span>Provider: <strong id="providerName">deep-translator</strong></span>
+          <div class="btn-group">
+            <button class="action-btn secondary" id="copyBtn">Copy</button>
+            <button class="action-btn secondary" id="downloadBtn">Download</button>
+          </div>
+        </div>
+
+        <div class="status" id="resultInfo">No translation yet.</div>
+      </section>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
