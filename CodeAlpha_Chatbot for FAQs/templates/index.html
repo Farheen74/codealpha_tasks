@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot For FAQs</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="AI-powered FAQ chatbot for instant 24/7 customer support">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">
+        <div class="header-content">
+            <div class="bot-info">
+                <div class="bot-avatar">
+                    <i class="fas fa-robot"></i>
+                    <span class="online-dot"></span>
+                </div>
+                <div class="bot-details">
+                    <h2><i class="fas fa-brain"></i> Chatbot for FAQs</h2>
+                    <p class="status"><span class="pulse"></span> Online</p>
+                </div>
+            </div>
+            <div class="header-tagline">Instant answers, anytime</div>
+        </div>
+    </div>
+    <div id="chat-box">
+        <div class="message bot-message">
+            <div class="avatar bot-avatar-img">🤖</div>
+            <div class="message-bubble">
+                <p>👋 <b>Hello! I'm your Chatbot For FAQs of Phones And Laptops</b></p>
+                <p>I'm a rule-based virtual assistant designed to automatically answer common customer questions, providing instant 24/7 support without human intervention.</p>
+                <hr>
+                <p><b>I can help you with:</b></p>
+                <ul>
+                    <li>💻 <b>Laptop</b> - Price,Ram,Storage,Etc</li>
+                    <li>📱<b>Phone</b> - Price,Camera,Battery,Etc</li> 
+                    <li>📦 <b>General</b> - Delivery,Policies,EMI,Etc</li>
+                </ul>
+                <p>Just ask me anything! 😊</p>
+            </div>
+        </div>
+    </div>
+    <div id="quick-replies" class="quick-replies-container"></div>
+    <div class="input-area">
+        <div class="input-wrapper">
+            <input id="user-input" placeholder="Type your question here..." autocomplete="off">
+            <button class="send-btn" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
