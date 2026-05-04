@@ -1,6 +1,0 @@
-{
-  "name": "Music Generation with AI - A Music Composer",
-  "description": "An advanced AI-powered music generation platform that uses neural patterns to compose melodies, harmonies, and rhythms. Experience the future of algorithmic composition with high-fidelity synthesis.",
-  "requestFramePermissions": ["microphone"],
-  "majorCapabilities": ["AI Music Generation", "Neural Visualization", "MIDI Synthesis"]
-}
